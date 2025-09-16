@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@import "tailwindcss";
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  min-width: 100%;
+  animation: marquee 20s linear infinite;
+}
+
+
