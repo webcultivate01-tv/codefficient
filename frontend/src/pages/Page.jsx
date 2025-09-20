@@ -1,9 +1,17 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 export default function AboutPage() {
-  return (
-    <div className="bg-light font-sans antialiased">
 
+     const items = [
+    "Teach Full Stack Development – from Java to MERN & MEAN stacks",
+    "Train Through Projects – Build apps you can showcase",
+    "Certify Your Skills – Get a Full Stack Web Development Certification",
+    "Place You with Companies – Our full stack developer course with placement ensures you’re not alone after training",
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-t from-black to-blue-100 font-sans antialiased">
 
       {/* Hero Section */}
     <header className="bg-gradient-to-r from-black to-white text-white py-20">
@@ -22,8 +30,8 @@ export default function AboutPage() {
         {/* Our Story */}
 
 
-                    <section className="mb-20">
-  <div className="flex flex-col md:flex-row items-center gap-12">
+       <section className="mb-20">
+          <div className="flex flex-col md:flex-row items-center gap-12">
     {/* Left Side Content */}
     <div className="md:w-1/2">
       <h2 className="text-3xl font-bold text-dark mb-6">
@@ -58,6 +66,92 @@ export default function AboutPage() {
   </div>
 </section>
 
+             <section className="mb-20">
+  <div className="flex flex-col md:flex-row items-center gap-12">
+    
+    {/* Left Side Image */}
+    <div className="md:w-1/2 order-2 md:order-1">
+      <img
+        src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+        alt="Developers collaboration"
+        className="rounded-lg shadow-xl w-full h-auto"
+      />
+    </div>
+
+    {/* Right Side Content */}
+    <div className="md:w-1/2 order-1 md:order-2">
+      <h2 className="text-3xl font-bold text-dark mb-6">Know Us</h2>
+      <p className="text-gray-700 mb-4 text-lg font-semibold">
+        Built by Developers. Trusted by Learners.
+      </p>
+      <p className="text-gray-700 mb-4">
+        We believe coding should not just be taught—it should be experienced. That’s why CODEfficient
+        is built on:
+      </p>
+      <ul className="list-disc list-inside text-gray-700 mb-4">
+        <li>Real mentors, not just pre-recorded videos.</li>
+        <li>Real projects, not just toy apps.</li>
+        <li>Real placement opportunities, not vague promises.</li>
+      </ul>
+      <p className="text-gray-700">
+        Our training is tailored for India’s talent, offering <strong>full stack course online India</strong>,
+        ensuring every learner—regardless of background—gets an equal chance at success.
+      </p>
+    </div>
+
+  </div>
+</section>
+  
+
+    <section className="bg-black text-white py-16 px-6 md:px-12 rounded-xl mt-12">
+      <div className="max-w-4xl mx-auto text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl font-bold mb-6"
+        >
+          What We Do
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="text-lg text-gray-300 mb-10"
+        >
+          From Learning to Earning—Your Full Stack Career Partner.  
+          We guide you through every step of your journey:
+        </motion.p>
+
+        <ul className="space-y-6 text-left">
+          {items.map((text, index) => (
+            <motion.li
+              key={index}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.3 }}
+              className="flex items-start space-x-4 bg-white/10 p-4 rounded-lg shadow-md hover:bg-white/20 transition"
+            >
+              <span className="text-white text-2xl">⚡</span>
+              <p className="text-gray-200">{text}</p>
+            </motion.li>
+          ))}
+        </ul>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="mt-10 text-gray-300 text-lg"
+        >
+          Whether you’re starting from scratch or looking to specialize in a specific tech stack, 
+          our learning paths are tailored for your growth.
+        </motion.p>
+      </div>
+    </section>
+
+     
 
         {/* Our Mission */}
         <section className="bg-primary-50 rounded-xl p-12 mb-20">
