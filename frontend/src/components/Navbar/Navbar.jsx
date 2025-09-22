@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Highlights from './Highlights.jsx'
 import RequestCallbackModal from "./RequestCallbackModal.jsx";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png"; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,23 +15,33 @@ export default function Navbar() {
 
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           {/* Logo */}
-          <motion.div
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.35 }}
-            className="text-white text-2xl font-bold"
-          >
-            CODEfficient
-          </motion.div>
+           <motion.div
+               >
+               <img
+               src={logo}
+               alt="CODEfficient Logo"
+               className="w-60 h-12 object-contain"
+               />
+            </motion.div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center space-x-8 text-white font-medium">
-            <li className="hover:text-gray-300 cursor-pointer">Home</li>
-            <li className="hover:text-gray-300 cursor-pointer">About</li>
-            <li className="hover:text-gray-300 cursor-pointer">Courses</li>
-            <li className="hover:text-gray-300 cursor-pointer">Blog</li>
-            <li className="hover:text-gray-300 cursor-pointer">Contact</li>
-          </ul>
+           <ul className="hidden md:flex items-center space-x-8 text-white font-medium">
+                 <li className="hover:text-gray-300 cursor-pointer">
+                      <Link to="/">Home</Link>
+                 </li>
+                 <li className="hover:text-gray-300 cursor-pointer">
+                      <Link to="/about">About</Link>
+                 </li>
+                 <li className="hover:text-gray-300 cursor-pointer">
+                      <Link to="/courses">Courses</Link>
+                 </li>
+                 <li className="hover:text-gray-300 cursor-pointer">
+                      <Link to="/blog">Blog</Link>
+                </li>
+                <li className="hover:text-gray-300 cursor-pointer">
+                  <Link to="/contact">Contact</Link>
+                 </li>
+           </ul>
 
           {/* Right side (CTA + Mobile toggle) */}
           <div className="flex items-center gap-3">

@@ -8,7 +8,13 @@ export default function Highlights() {
         <span className="mx-8">🎯 Placement Guidance</span>
         <span className="mx-8">🌐 Modern Web Development</span>
         <span className="mx-8">👨‍🏫 20+ Years of Expertise</span>
+         <span className="mx-8">🚀 100% Online Training</span>
+        <span className="mx-8">💻 Live Projects</span>
+        <span className="mx-8">🎯 Placement Guidance</span>
+        <span className="mx-8">🌐 Modern Web Development</span>
+        <span className="mx-8">👨‍🏫 20+ Years of Expertise</span>
       </div>
     </div>
   );
 }
+  
