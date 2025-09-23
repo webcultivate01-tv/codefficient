@@ -26,7 +26,8 @@ export default function CoursesDropdown() {
               {course}
             </NavLink>
           </li>
-        ))}
+        ))
+        }
       </ul>
     </li>
   );
