@@ -23,6 +23,8 @@ export default function RequestCallbackModal({ isOpen, onClose }) {
     };
   }, [isOpen, onClose]);
 
+  
+
   async function handleSubmit(e) {
     e.preventDefault();
     const fd = new FormData(e.target);
@@ -48,14 +50,14 @@ export default function RequestCallbackModal({ isOpen, onClose }) {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-60 flex items-center justify-center"
+          className="fixed inset-0 z-[9999] flex items-center justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
           {/* overlay */}
           <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm z-[9998]"
             onClick={onClose}
             aria-hidden
           />
@@ -69,7 +71,7 @@ export default function RequestCallbackModal({ isOpen, onClose }) {
             animate={{ y: 0, scale: 1 }}
             exit={{ y: 12, opacity: 0 }}
             transition={{ duration: 0.18 }}
-            className="relative bg-white rounded-xl shadow-xl w-full max-w-md mx-4 p-6"
+            className="relative bg-white rounded-xl shadow-xl w-full max-w-md mx-4 p-6 z-[9999]"
             onClick={(e) => e.stopPropagation()}
           >
             <h3 id="rc-title" className="text-lg font-semibold text-gray-900">

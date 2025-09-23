@@ -1,9 +1,11 @@
-import React from 'react'
+import EducationalContactPage from "../components/EducationalContactPage";
+import AnimatedCards from "../components/AnimatedCards";
 
 export default function Contact() {
   return (
     <div>
-      <h1>Contact Component</h1>
+      <EducationalContactPage />
+      <AnimatedCards/>
     </div>
-  )
+  );
 }

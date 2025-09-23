@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import bgVideo from "../assets/bg-video.mp4";
+
 const Home = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
@@ -11,7 +12,7 @@ const Home = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-         <source src={bgVideo} type="video/mp4" />
+        <source src={bgVideo} type="video/mp4" />
       </video>
 
       {/* Overlay with text */}

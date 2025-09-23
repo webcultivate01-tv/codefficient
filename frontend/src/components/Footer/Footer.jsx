@@ -1,25 +1,22 @@
 import React from "react";
+import logo from "../../assets/logo.png"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-8">
+    <footer className="bg-gray-900 text-white pt-12 pb-8 pl-5 pr-5">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 mr-10">
             <div className="flex items-center">
-              <svg className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                />
-              </svg>
-              <span className="ml-2 text-xl font-bold">CODEfficient</span>
+               <img 
+                src={logo}   // 👉 put your logo path here
+                alt="CODEfficient Logo"
+                className="h-18 w-21 object-contain" 
+              />
             </div>
-            <p className="text-gray-400">Building innovative solutions for the modern world.</p>
-            <div className="flex space-x-4">
+            <p className="text-gray-400 ml-5">Building innovative solutions for the modern world.</p>
+            <div className="flex space-x-4 ml-5 ">
               {/* Social Icons */}
               <a href="#" className="text-gray-400 hover:text-white transition">
                 <span className="sr-only">Facebook</span>
@@ -32,7 +29,7 @@ export default function Footer() {
                 </svg>
               </a>
               {/* Instagram */}
-<a href="#" className="text-gray-400 hover:text-white transition">
+<a href="https://www.instagram.com/codefficient_/" className="text-gray-400 hover:text-white transition">
   <span className="sr-only">Instagram</span>
   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
     <path
@@ -73,40 +70,37 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4 text-center md:text-left">
+          <div className="space-y-4 text-center md:text-left  mr-10">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition">Home</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition">About Us</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition">Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Pricing</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition">Blog</a></li>
             </ul>
           </div>
 
           {/* Services */}
           <div className="space-y-4 text-center md:text-left">
-            <h3 className="text-lg font-semibold">Services</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Web Development</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">UI/UX Design</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Digital Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
+            <h3 className="text-lg font-semibold">Our Popular Courses</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-gray-400 hover:text-white transition">Java Full Stack Developer Course (with Placement)</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition">Online MERN Stack Course (with Placement)</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition">MEAN Stack Developer Training</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition">Full Stack Course for Beginners Online</a></li>
             </ul>
           </div>
 
           {/* Contact */}
-          <div className="space-y-4 text-center md:text-left">
+          <div className="space-y-4 text-center md:text-left mr-10">
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <address className="not-italic text-gray-400">
-              <p>123 Business Ave</p>
-              <p>San Francisco, CA 94107</p>
+              <p>Sahakar Nagar, Pune-9</p>
               <p className="mt-2">
-                Email: <a href="mailto:info@company.com" className="hover:text-white transition">info@company.com</a>
+                Email: <a href="admin@codefficient.in" className="hover:text-white transition">admin@codefficient.in</a>
               </p>
               <p>
-                Phone: <a href="tel:+11234567890" className="hover:text-white transition">+1 (123) 456-7890</a>
+                Phone: <a href="tel:+9309579387" className="hover:text-white transition">9309579387 / 9167034573</a>
               </p>
             </address>
           </div>

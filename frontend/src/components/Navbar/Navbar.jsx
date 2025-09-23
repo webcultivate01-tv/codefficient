@@ -2,6 +2,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Highlights from './Highlights.jsx'
 import RequestCallbackModal from "./RequestCallbackModal.jsx";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png"; 
+import CoursesDropdown from "./CoursesDropdown";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,25 +13,32 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-md z-50">
-
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           {/* Logo */}
-          <motion.div
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.35 }}
-            className="text-white text-2xl font-bold"
-          >
-            CODEfficient
+          <motion.div>
+            <img
+              src={logo}
+              alt="CODEfficient Logo"
+              className="w-60 h-12 object-contain"
+            />
           </motion.div>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center space-x-8 text-white font-medium">
-            <li className="hover:text-gray-300 cursor-pointer">Home</li>
-            <li className="hover:text-gray-300 cursor-pointer">About</li>
-            <li className="hover:text-gray-300 cursor-pointer">Courses</li>
-            <li className="hover:text-gray-300 cursor-pointer">Blog</li>
-            <li className="hover:text-gray-300 cursor-pointer">Contact</li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="/about">About</Link>
+            </li>
+            {/* Use the Courses Dropdown component */}
+            <CoursesDropdown />
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
 
           {/* Right side (CTA + Mobile toggle) */}
@@ -38,7 +48,7 @@ export default function Navbar() {
               onClick={() => setModalOpen(true)}
               aria-haspopup="dialog"
               aria-expanded={modalOpen}
-              className="hidden md:inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold shadow-md transform transition hover:scale-105"
+              className="hidden md:inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold shadow-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl hover:from-indigo-600 hover:to-purple-600"
             >
               Request Callback
             </button>
@@ -59,11 +69,21 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden bg-black/85 text-white px-6 py-4">
             <ul className="flex flex-col gap-3">
-              <li className="py-2">Home</li>
-              <li className="py-2">About</li>
-              <li className="py-2">Courses</li>
-              <li className="py-2">Blog</li>
-              <li className="py-2">Contact</li>
+              <li className="py-2">
+                <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+              </li>
+              <li className="py-2">
+                <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+              </li>
+              <li className="py-2">
+                <Link to="/courses" onClick={() => setIsOpen(false)}>Courses</Link>
+              </li>
+              <li className="py-2">
+                <Link to="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
+              </li>
+              <li className="py-2">
+                <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+              </li>
             </ul>
 
             <div className="mt-4">
@@ -72,7 +92,7 @@ export default function Navbar() {
                   setModalOpen(true);
                   setIsOpen(false);
                 }}
-                className="w-full px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 font-semibold"
+                className="w-full px-4 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold shadow-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl hover:from-indigo-600 hover:to-purple-600"
               >
                 Request Callback
               </button>
