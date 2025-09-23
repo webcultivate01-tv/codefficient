@@ -4,6 +4,7 @@ import Highlights from './Highlights.jsx'
 import RequestCallbackModal from "./RequestCallbackModal.jsx";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"; 
+import CoursesDropdown from "./CoursesDropdown";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +33,8 @@ export default function Navbar() {
                  <li className="hover:text-gray-300 cursor-pointer">
                       <Link to="/about">About</Link>
                  </li>
-                 <li className="hover:text-gray-300 cursor-pointer">
-                      <Link to="/courses">Courses</Link>
-                 </li>
+                  {/* Use the Courses Dropdown component */}
+                    <CoursesDropdown />
                  <li className="hover:text-gray-300 cursor-pointer">
                       <Link to="/blog">Blog</Link>
                 </li>
