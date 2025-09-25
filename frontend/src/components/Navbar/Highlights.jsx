@@ -16,7 +16,7 @@ export default function Highlights() {
   const allItems = [...items, ...items, ...items];
 
   return (
-    <div className="fixed top-16 left-0 w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-2 overflow-hidden z-40">
+    <div className="fixed top-16 left-0 w-full bg-gradient-to-r from-orange-700 to-yellow-700 text-white py-2 overflow-hidden z-40">
       <div className="flex animate-marquee whitespace-nowrap">
         {allItems.map((item, index) => (
           <span key={index} className="mx-4">

@@ -48,8 +48,11 @@ export default function Navbar() {
               onClick={() => setModalOpen(true)}
               aria-haspopup="dialog"
               aria-expanded={modalOpen}
-              className="hidden md:inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold shadow-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl hover:from-indigo-600 hover:to-purple-600"
+              // className="hidden md:inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold shadow-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl hover:from-indigo-600 hover:to-purple-600"
+              className="hidden md:inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-orange-600 to-yellow-600 hover:shadow-lg focus:ring-4 focus:ring-orange-30000 text-white font-semibold shadow-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl "
+
             >
+              
               Request Callback
             </button>
 
