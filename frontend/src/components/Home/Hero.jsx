@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-0 sm:gap-x-4">
             <a
               href="https://example.com/new-feature"
-              className="flex flex-row items-center justify-center gap-x-2 rounded-lg text-white px-10 py-3 bg-teal-500 hover:bg-teal-600 transition"
+              className="flex flex-row items-center justify-center gap-x-2 rounded-lg text-white px-10 py-3 border border-orange-500 px-10 py-3 text-white hover:bg-gradient-to-r from-orange-600 to-yellow-600 transition"
             >
               <svg
                 className="h-[30px] text-white"
@@ -53,7 +53,7 @@ const Hero = () => {
             </a>
             <a
               href="#demo"
-              className="flex flex-row items-center justify-center gap-x-2 rounded-lg border border-teal-500 px-10 py-3 text-teal-500 hover:bg-teal-100 transition"
+              className="flex flex-row items-center justify-center gap-x-2 rounded-lg border border-orange-500 px-10 py-3 text-white hover:bg-gradient-to-r from-orange-600 to-yellow-600 transition"
             >
               Learn More →
             </a>

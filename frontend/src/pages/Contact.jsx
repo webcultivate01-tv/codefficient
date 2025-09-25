@@ -3,7 +3,7 @@ import AnimatedCards from "../components/AnimatedCards";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="bg-black">
       <EducationalContactPage />
       <AnimatedCards/>
     </div>

@@ -6,9 +6,9 @@ export default function EducationalContactPage() {
       {/* Header Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Enquire About Our <span className="text-red-600">Courses</span>
+          Enquire About Our <span className="text-orange-600">Courses</span>
         </h1>
-        <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+        <div className="w-20 h-1 bg-orange-600 mx-auto mb-6"></div>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           We're here to help you begin your creative journey. Fill out the form below and our team will get back to you shortly.
         </p>
@@ -22,7 +22,7 @@ export default function EducationalContactPage() {
         className="bg-white rounded-xl shadow-2xl overflow-hidden md:flex"
       >
         {/* Left Side */}
-        <div className="md:w-1/3 bg-gradient-to-br from-gray-400 to-gray-900 p-10 text-white flex flex-col justify-between">
+        <div className="md:w-1/3 bg-gradient-to-br from-orange-600 to-yellow-600 p-10 text-white flex flex-col justify-between">
           <div>
             <h2 className="text-2xl font-bold mb-4">Why Enquire With Us?</h2>
             <ul className="space-y-4">
@@ -128,7 +128,7 @@ export default function EducationalContactPage() {
             <div>
               <button
                 type="submit"
-                className="w-full py-3 px-6 bg-gray-600 text-white font-medium rounded-lg shadow-sm hover:bg-gray-900 transition duration-300"
+                className="w-full py-3 px-6 bg-gradient-to-r from-orange-600 to-yellow-600  text-white font-medium rounded-lg shadow-sm hover:bg-gray-900 transition duration-300"
               >
                 Submit Enquiry
               </button>
