@@ -10,7 +10,7 @@ import Blog from './pages/Blog.jsx'
 
 function App() {
   return (
-    <Router>
+    <Router>Pushkiller devopar Kulturi. 
       <Routes>
         <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
