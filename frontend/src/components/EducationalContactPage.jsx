@@ -5,11 +5,11 @@ export default function EducationalContactPage() {
     <section className="relative max-w-7xl mx-auto px-4 py-16">
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Enquire About Our <span className="text-orange-600">Courses</span>
         </h1>
         <div className="w-20 h-1 bg-orange-600 mx-auto mb-6"></div>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-white max-w-3xl mx-auto">
           We're here to help you begin your creative journey. Fill out the form below and our team will get back to you shortly.
         </p>
       </div>
@@ -22,7 +22,7 @@ export default function EducationalContactPage() {
         className="bg-white rounded-xl shadow-2xl overflow-hidden md:flex"
       >
         {/* Left Side */}
-        <div className="md:w-1/3 bg-gradient-to-br from-orange-600 to-yellow-600 p-10 text-white flex flex-col justify-between">
+        <div className="md:w-1/3 bg-gradient-to-br from-orange-200 to-yellow-900 p-10 text-white flex flex-col justify-between">
           <div>
             <h2 className="text-2xl font-bold mb-4">Why Enquire With Us?</h2>
             <ul className="space-y-4">
@@ -66,7 +66,7 @@ export default function EducationalContactPage() {
                   type="text"
                   name="fullName"
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+                  className="w-full px-4 py-3 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
                   required
                 />
               </div>
@@ -78,7 +78,7 @@ export default function EducationalContactPage() {
                   type="email"
                   name="email"
                   placeholder="john@example.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+                  className="w-full px-4 py-3 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
                   required
                 />
               </div>
@@ -90,7 +90,7 @@ export default function EducationalContactPage() {
                   type="tel"
                   name="mobileNumber"
                   placeholder="+91 9876543210"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+                  className="w-full px-4 py-3 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
                   required
                 />
               </div>
@@ -100,7 +100,7 @@ export default function EducationalContactPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Course Interested In</label>
                 <select
                   name="courses"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-black-700 focus:border-black-500 bg-white"
+                  className="w-full px-4 py-3 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:ring-black-700 focus:border-black-500 bg-white"
                   required
                 >
                   <option value="">Select a Course</option>
@@ -119,7 +119,7 @@ export default function EducationalContactPage() {
                 name="message"
                 rows="4"
                 placeholder="Tell us about your interests and goals..."
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+                className="w-full px-4 py-3 border border-gray-400 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
                 required
               ></textarea>
             </div>
