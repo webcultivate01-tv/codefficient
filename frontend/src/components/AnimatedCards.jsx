@@ -26,15 +26,15 @@ const AnimatedCards = () => {
   }, [activeIndex]);
 
   return (
-    <section className="bg-zinc-50 overflow-hidden">
+    <section className="bg-black overflow-hidden ">
       <div className="max-w-screen-xl 2xl:max-w-screen-3xl px-4 md:px-12 mx-auto py-20 flex flex-col justify-center space-y-16">
 
         {/* Big Heading */}
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white">
             Explore Codefficient Courses
           </h2>
-          <p className="mt-6 text-gray-600 text-lg md:text-xl">
+          <p className="mt-6 text-white text-lg md:text-xl">
             Click on any course image to view it bigger
           </p>
         </div>
