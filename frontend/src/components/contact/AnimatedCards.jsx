@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 // Import your local images
-import mernStack from "../assets/mernStack.jpg";
-import meanStack from "../assets/meanStack.jpg";
-import javaFullStack from "../assets/javaFullStack.jpg";
+import mernStack from "../../assets/mernStack.jpg";
+import meanStack from "../../assets/meanStack.jpg";
+import javaFullStack from "../../assets/javaFullStack.jpg";
 
 const AnimatedCards = () => {
   const [activeIndex, setActiveIndex] = useState(null);

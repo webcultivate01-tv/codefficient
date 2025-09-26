@@ -1,5 +1,5 @@
-import EducationalContactPage from "../components/EducationalContactPage";
-import AnimatedCards from "../components/AnimatedCards";
+import EducationalContactPage from "../components/contact/EducationalContactPage";
+import AnimatedCards from "../components/contact/AnimatedCards";
 
 export default function Contact() {
   return (
