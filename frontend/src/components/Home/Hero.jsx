@@ -20,7 +20,7 @@ const Hero = () => {
     
         {/* New Section */}
         <div className="relative my-12 flex w-full flex-col items-center sm:mt-24 text-white bg-opacity-70 rounded-lg p-8 max-w-4xl">
-            <h1 className="max-w-sm text-center text-4xl font-extrabold sm:max-w-4xl sm:text-6xl">
+            <h1 className="max-w-sm text-center text-4xl font-extrabold sm:max-w-4xl sm:text-6xl ">
                Welcome to <span className="text-orange-600">CODE</span>
                 <span className="text-white">fficient</span>
            </h1>

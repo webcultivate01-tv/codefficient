@@ -50,7 +50,7 @@ const AnimatedCards = () => {
               className={`
                 rounded-xl cursor-pointer 
                 h-64 sm:h-72 md:h-80 w-full sm:w-60 md:w-72 lg:w-72 
-                object-cover transform duration-500 border border-white
+                object-cover transform duration-500
                 ${activeIndex === index ? "scale-125 z-10" : "scale-100"}
               `}
             />
