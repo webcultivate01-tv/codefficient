@@ -1,17 +1,16 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import AboutHero from '../components/About/AboutHero';
-import AboutAboutPage from '../components/About/AboutAboutPage';
-import KnowUs from '../components/About/KnowUs';
-import WhatWeDo from '../components/About/WhatWeDo';
-import Vision from '../components/About/Vision';
-import Mission from '../components/About/Mission';
-import Team from '../components/About/Team';
-import CallToAction from '../components/About/CallToAction';
+import AboutHero from '../components/About/AboutHero.jsx';
+import AboutAboutPage from '../components/About/AboutAboutPage.jsx';
+import KnowUs from '../components/About/KnowUs.jsx';
+import WhatWeDo from '../components/About/WhatWeDo.jsx';
+import Vision from '../components/About/Vision.jsx';
+import Mission from '../components/About/Mission.jsx';
+import Team from '../components/About/Team.jsx';
+import CallToAction from '../components/About/CallToAction.jsx';
 
-export default function AboutPage() {
+export default function About() {
   
-
   return (
     <div className="min-h-screen bg-black font-sans antialiased">
       {/* Hero Section */}
