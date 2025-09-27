@@ -6,7 +6,7 @@ export default function Blog() {
       <section class="max-w-7xl mx-auto px-6 py-16 ">
   {/* <!-- Blog Header --> */}
   <div class="text-center mb-12">
-    <h2 class="text-4xl font-bold text-gray-800 mb-4">Latest Articles</h2>
+    <h2 class="text-4xl font-bold text-gray-800 mb-4">Latest blog</h2>
     <p class="text-lg text-gray-600 max-w-2xl mx-auto">
       Discover our latest insights, stories, and updates to help you stay informed and inspired.
     </p>
